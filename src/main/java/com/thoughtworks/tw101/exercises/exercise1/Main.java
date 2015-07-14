@@ -11,6 +11,6 @@ public class Main {
                 sum = sum + i;
             }
         }
-        System.out.print("\n Final Sum is: " + sum);
+        System.out.print("\nFinal Sum is: " + sum);
     }
 }

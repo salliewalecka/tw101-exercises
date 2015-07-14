@@ -6,8 +6,16 @@ package com.thoughtworks.tw101.exercises.exercise2;
 public class Main {
     public static void main(String[] args) {
 
+        int timesCalled = 5;
         Accumulator accumulator = new Accumulator();
 
+        int i=0;
+        while(i<timesCalled) {
+            accumulator.increment();
+            i++;
+        }
+
+        accumulator.total();
 
     }
 }
