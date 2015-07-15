@@ -11,7 +11,15 @@ public class Library {
         this.printStream = printStream;
     }
 
+    //returns last title containing the string.
     public String printBooksContaining(String partialBookTitle) {
-        return null;
+        String lastTitle= null;
+        for (int i = 0; i < books.length; i++) {
+            if (books[i].contains(partialBookTitle)) {
+                System.out.println(books[i]);
+                lastTitle=books[i];
+            }
+        }
+        return lastTitle;
     }
 }
