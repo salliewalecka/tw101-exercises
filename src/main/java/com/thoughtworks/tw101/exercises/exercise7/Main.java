@@ -8,5 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        NumberGenerator generator= new NumberGenerator();
+        generator.generateInt();
+        User user= new User();
+        user.readIn();
+        while(!user.evaluateGuess(generator.getGenerated())){
+            user.readIn();
+        }
+
+
     }
 }
