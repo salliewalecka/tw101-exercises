@@ -30,7 +30,6 @@ public class User {
     public void readIn(){
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter your guess:");
-        // get user input for a
         String response = reader.next();
         try {
             guess = Integer.parseInt(response);
